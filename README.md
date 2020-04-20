@@ -8,7 +8,7 @@ Ludum-Dare 46: https://ldjam.com/events/ludum-dare/46/$188104
 
 Itch: https://blackgoku36.itch.io/mr-virus
 
-## Tools used
+## Stuffs used
 * [Rice2D](https://github.com/BlackGoku36/Rice2D) (2D Game engine)
 * [Piskel](https://www.piskelapp.com/) (Pixel art)
 * [1001fonts](https://www.1001fonts.com/pix-pixelfjverdana12pt-font.html) (Pixel FJVerdana 12pt Font)
