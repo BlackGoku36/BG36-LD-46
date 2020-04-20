@@ -36,6 +36,7 @@ class CanvasController extends rice2d.Script{
                 if(kb.started(Space) && (state == Dialogue || state == Win || state == Lose) ){
                     StageController.stage = 1;
                     StageController.virusDefeated = 0;
+                    StageController.totalVirusDefeated = 0;
                     HeartController.health = 200.0;
                     alpha = 255;
                     state = Stage;
