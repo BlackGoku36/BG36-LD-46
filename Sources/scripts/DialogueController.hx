@@ -38,6 +38,8 @@ class DialogueController extends rice2d.Script{
                 g.drawString("Oh no! Mr.Virus and his minions are co *cough* ming in!", 400, System.windowHeight()-230);
                 g.drawString("Drag me *cough* around to defeat them!", 400, System.windowHeight()-170);
                 g.drawString("Make sure to not let them get to *cough* heart!", 400, System.windowHeight()-110);
+                g.fontSize = 35;
+                g.drawString("(Press space to continue)", 600, System.windowHeight()-50);
             }
             g.color = col;
         });
