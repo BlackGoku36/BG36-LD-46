@@ -70,9 +70,6 @@ class CanvasController extends rice2d.Script{
                 Scheduler.addTimeTask(function (){
                     alpha -= 5;
                 }, 2.0, 2.0, 2.0);
-                // Timer.delay(function (){
-                //     alpha -= 5;
-                // }, 2000);
             }else if(state == Win){
                 g.color = Color.fromBytes(50, 50, 50, alpha);
                 g.fillRect(0, 0, System.windowWidth(), System.windowHeight());
@@ -88,7 +85,7 @@ class CanvasController extends rice2d.Script{
                 g.fontSize = 100;
                 g.drawString('Mr.Virus defeated you!', (System.windowWidth()/2)-(g.font.width(g.fontSize, 'Mr.Virus defeated you!')/2), (System.windowHeight()/2)-(g.font.height(g.fontSize)/2)-150);
                 g.fontSize = 70;
-                g.drawString('Viruses defeated: ${StageController.virusDefeated}', (System.windowWidth()/2)-(g.font.width(g.fontSize, 'Viruses defeated: ${StageController.virusDefeated}')/2), (System.windowHeight()/2)-(g.font.height(g.fontSize)/2));
+                g.drawString('Viruses defeated: ${StageController.totalVirusDefeated}', (System.windowWidth()/2)-(g.font.width(g.fontSize, 'Viruses defeated: ${StageController.virusDefeated}')/2), (System.windowHeight()/2)-(g.font.height(g.fontSize)/2));
                 g.drawString('Press space to retry', (System.windowWidth()/2)-(g.font.width(g.fontSize, 'Press space to retry')/2), (System.windowHeight()/2)-(g.font.height(g.fontSize)/2)+150);
             }
             g.color = col;

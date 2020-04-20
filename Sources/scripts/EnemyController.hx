@@ -79,6 +79,7 @@ class EnemyController extends rice2d.Script{
 
 			if(CollisionDetection.AABBCD(a, object)){
 				StageController.virusDefeated += 1;
+				StageController.totalVirusDefeated += 1;
 				object.remove();
 			}
 		});

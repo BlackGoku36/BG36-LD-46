@@ -35,7 +35,7 @@ class WorldController extends rice2d.Script{
 			g.drawString('Health: ${Math.round(HeartController.health)}/${HeartController.totalHealth}', 20, 50);
 			g.fontSize = 30;
 			g.drawString('Stage: ${StageController.stage}', 250, 20);
-			g.drawString('Virus defeated: ${StageController.virusDefeated}', 350, 20);
+			g.drawString('Virus defeated: ${StageController.totalVirusDefeated}', 350, 20);
 			g.color = col;
 		});
 

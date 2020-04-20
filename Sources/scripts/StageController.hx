@@ -14,6 +14,7 @@ class StageController extends rice2d.Script{
 
     public static var stage = 1;
     public static var virusDefeated = 0;
+    public static var totalVirusDefeated = 0;
 
     static var timetask:Int;
     static var spawnRate = 3.0;
@@ -27,6 +28,7 @@ class StageController extends rice2d.Script{
         });
 
         notifyOnUpdate(function (){
+            if(CanvasController.state == Lose) return;
             if(virusDefeated == 20 && stage == 1){
                 stage = 2;
                 CanvasController.state = Stage;
