@@ -1,0 +1,107 @@
+{
+	"name": "Scene",
+	"assets": [
+		{
+			"name": "pixelfont",
+			"type": 1,
+			"path": "pix-pixelfjverdana12pt.regular.ttf"
+		},
+		{
+			"name": "font",
+			"type": 1,
+			"path": "OpenSans-Regular.ttf"
+		},
+		{
+			"name": "mask",
+			"type": 0,
+			"path": "mask.png"
+		},
+		{
+			"name": "veins",
+			"type": 0,
+			"path": "veins.png"
+		},
+		{
+			"name": "virus1",
+			"type": 0,
+			"path": "virus1.png"
+		},
+		{
+			"name": "virus2",
+			"type": 0,
+			"path": "virus2.png"
+		},
+		{
+			"name": "heart",
+			"type": 0,
+			"path": "heart.png"
+		},
+		{
+			"name": "player",
+			"type": 0,
+			"path": "player.png"
+		}
+	],
+	"scripts": [
+		{
+			"name": "WorldController",
+			"scriptRef": "WorldController"
+		},
+		{
+			"name": "CanvasController",
+			"scriptRef": "CanvasController"
+		},
+		{
+			"name": "StageController",
+			"scriptRef": "StageController"
+		},
+		{
+			"name": "DialogueController",
+			"scriptRef": "DialogueController"
+		}
+	],
+	"objects": [
+		{
+			"name": "player",
+			"x": 50,
+			"y": 50,
+			"height": 40,
+			"width": 40,
+			"color": [
+				100,
+				200,
+				50,
+				255
+			],
+			"spriteRef":"player",
+			"animate": false,
+			"scripts": [
+				{
+					"name": "PlayerController",
+					"scriptRef": "PlayerController"
+				}
+			]
+		},
+		{
+			"name": "heart",
+			"x": 50,
+			"y": 50,
+			"height": 100,
+			"width": 100,
+			"color": [
+				100,
+				200,
+				50,
+				255
+			],
+			"spriteRef":"heart",
+			"animate": false,
+			"scripts": [
+				{
+					"name": "HeartController",
+					"scriptRef": "HeartController"
+				}
+			]
+		}
+	]
+}
