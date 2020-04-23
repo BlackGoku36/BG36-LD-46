@@ -21,7 +21,7 @@ class EnemyController extends rice2d.Script{
 	public function new() {
 		super();
 
-		notifyOnInit(function (){
+		notifyOnAdd(function (){
 
 			if(Label.hasLabel(object.props, "js")){
 				jumpscareTargetX = Util.randomRangeF(0, System.windowWidth());

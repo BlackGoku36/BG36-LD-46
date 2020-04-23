@@ -18,7 +18,7 @@ class HeartController extends rice2d.Script{
 	public function new() {
 		super();
 
-		notifyOnInit(function (){
+		notifyOnAdd(function (){
 			object.props.x = System.windowWidth()/2 - object.props.width/2;
 			object.props.y = System.windowHeight()/2 - object.props.height/2;
 			width = object.props.width;

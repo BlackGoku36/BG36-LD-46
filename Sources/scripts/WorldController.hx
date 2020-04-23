@@ -16,7 +16,7 @@ class WorldController extends rice2d.Script{
 		super();
 
 
-		notifyOnInit(function (){
+		notifyOnAdd(function (){
 			font = Assets.getAsset("font", Font);
 		});
 

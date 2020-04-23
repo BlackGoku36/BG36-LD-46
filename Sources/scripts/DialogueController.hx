@@ -15,7 +15,7 @@ class DialogueController extends rice2d.Script{
     public function new() {
         super();
 
-        notifyOnInit(function (){
+        notifyOnAdd(function (){
             mask = Assets.getAsset("mask", Image);
             veins = Assets.getAsset("veins", Image);
             font = Assets.getAsset("pixelfont", Font);
