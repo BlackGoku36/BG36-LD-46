@@ -28,8 +28,11 @@ class CanvasController extends rice2d.Script{
     public function new() {
         super();
 
+        notifyOnAdd(function (){
+            font = Assets.getAsset("pix_pixelfjverdana12pt_regular", Font);
+        });
+
         notifyOnUpdate(function (){
-            font = Assets.getAsset("pixelfont", Font);
 
             if(state != None && state != Stage){
 
@@ -67,10 +70,10 @@ class CanvasController extends rice2d.Script{
                 g.color = Color.fromBytes(255, 255, 255, alpha);
                 g.fontSize = 100;
                 g.drawString('Stage ${StageController.stage} begins!', (System.windowWidth()/2)-(g.font.width(g.fontSize, 'Stage ${StageController.stage} begins!')/2), (System.windowHeight()/2)-(g.font.height(g.fontSize)/2));
-                if(alpha == 0) state = None;
+                if(alpha <= 0) state = None;
                 Scheduler.addTimeTask(function (){
                     alpha -= 5;
-                }, 2.0, 2.0, 2.0);
+                }, 2.0, 0.1, 2.0);
             }else if(state == Win){
                 g.color = Color.fromBytes(50, 50, 50, alpha);
                 g.fillRect(0, 0, System.windowWidth(), System.windowHeight());
@@ -88,6 +91,8 @@ class CanvasController extends rice2d.Script{
                 g.fontSize = 70;
                 g.drawString('Viruses defeated: ${StageController.totalVirusDefeated}', (System.windowWidth()/2)-(g.font.width(g.fontSize, 'Viruses defeated: ${StageController.virusDefeated}')/2), (System.windowHeight()/2)-(g.font.height(g.fontSize)/2));
                 g.drawString('Press space to retry', (System.windowWidth()/2)-(g.font.width(g.fontSize, 'Press space to retry')/2), (System.windowHeight()/2)-(g.font.height(g.fontSize)/2)+150);
+            }else if(state == None){
+                alpha = 0;
             }
             g.color = col;
         });

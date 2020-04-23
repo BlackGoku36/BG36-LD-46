@@ -2,44 +2,36 @@
 	"name": "Scene",
 	"assets": [
 		{
-			"name": "pixelfont",
-			"type": 1,
-			"path": "pix-pixelfjverdana12pt.regular.ttf"
+			"name": "OpenSans_Regular",
+			"type": 1
 		},
 		{
-			"name": "font",
-			"type": 1,
-			"path": "OpenSans-Regular.ttf"
+			"name": "pix_pixelfjverdana12pt_regular",
+			"type": 1
 		},
 		{
 			"name": "mask",
-			"type": 0,
-			"path": "mask.png"
+			"type": 0
 		},
 		{
 			"name": "veins",
-			"type": 0,
-			"path": "veins.png"
+			"type": 0
 		},
 		{
 			"name": "virus1",
-			"type": 0,
-			"path": "virus1.png"
+			"type": 0
 		},
 		{
 			"name": "virus2",
-			"type": 0,
-			"path": "virus2.png"
+			"type": 0
 		},
 		{
 			"name": "heart",
-			"type": 0,
-			"path": "heart.png"
+			"type": 0
 		},
 		{
 			"name": "player",
-			"type": 0,
-			"path": "player.png"
+			"type": 0
 		}
 	],
 	"scripts": [
